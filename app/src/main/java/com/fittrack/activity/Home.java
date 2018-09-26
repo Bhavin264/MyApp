@@ -68,6 +68,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class Home extends AppCompatActivity implements View.OnClickListener {
 
@@ -126,6 +129,8 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
                 new PushClass(Home.this, custom_data, msg);
             }
         };
+
+        AppCenter.start(getApplication(), "19e52bbd-7203-4faa-9631-247e3d21e4ed", Analytics.class, Crashes.class);
 
     }
 

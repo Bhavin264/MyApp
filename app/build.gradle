@@ -66,6 +66,10 @@ dependencies {
     compile 'com.naver.android.helloyako:imagecropview:1.0.3'
     /*Animation*/
     compile 'com.nineoldandroids:library:2.4.0'
+
+    def appCenterSdkVersion = '1.8.0'
+    compile "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    compile "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 }
 // ADD THIS AT THE BOTTOM
 apply plugin: 'com.google.gms.google-services'
