@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_new_login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_layout" />
+
+            <include layout="@layout/progressbar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ll_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/margin_30dp"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_transparent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <include
+                        layout="@layout/ads_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@drawable/bg_new_login">-->
+
+    <!--<LinearLayout--><!--android:id="@+id/ll_header"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<include layout="@layout/header_layout" />-->
+
+    <!--<include layout="@layout/progressbar" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:id="@+id/ll_main"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/ll_header"--><!--android:layout_marginBottom="@dimen/margin_15dp"--><!--android:layout_marginLeft="@dimen/margin_15dp"--><!--android:layout_marginRight="@dimen/margin_15dp"--><!--android:layout_marginTop="@dimen/margin_15dp"--><!--android:background="@drawable/bg_round_white"--><!--android:orientation="vertical">-->
+
+    <!--<LinearLayout--><!--android:id="@+id/ll_image"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="@dimen/margin_10dp"--><!--android:layout_marginRight="@dimen/margin_10dp"--><!--android:layout_marginTop="@dimen/margin_15dp"--><!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/image"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;--><!--&lt;!&ndash;android:src="@drawable/image_placeholder_big" />&ndash;&gt;-->
+
+    <!--<android.support.v4.view.ViewPager--><!--android:id="@+id/viewpager"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true" />--><!--</LinearLayout>-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="@dimen/margin_10dp"--><!--android:layout_marginLeft="@dimen/margin_30dp"--><!--android:layout_marginRight="@dimen/margin_30dp"--><!--android:layout_marginTop="@dimen/margin_5dp"--><!--android:background="@drawable/bg_round_transparent"--><!--android:orientation="horizontal"--><!--android:visibility="gone">-->
+
+    <!--<com.fittrack.View.RegularFontTextView--><!--android:id="@+id/tv_date"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentLeft="true"--><!--android:gravity="center"--><!--android:padding="@dimen/margin_5dp"--><!--android:text="xdscf"--><!--android:textColor="@color/color_black"--><!--android:textSize="@dimen/font_16sp" />-->
+
+    <!--<com.fittrack.View.RegularFontTextView--><!--android:id="@+id/tv_weight"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentRight="true"--><!--android:gravity="center"--><!--android:padding="@dimen/margin_5dp"--><!--android:text="fdsf"--><!--android:textColor="@color/color_red"--><!--android:textSize="@dimen/font_16sp" />-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<include--><!--layout="@layout/ads_view"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentBottom="true"--><!--android:visibility="visible" />--><!--</RelativeLayout>-->

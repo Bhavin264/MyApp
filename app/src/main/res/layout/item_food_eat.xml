@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.fittrack.View.RegularFontTextView
+        android:id="@+id/tv_eat_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:drawableLeft="@drawable/ic_green_food_eat"
+        android:drawablePadding="@dimen/margin_10dp"
+        android:gravity="center|left"
+        android:padding="@dimen/margin_5dp"
+        android:text="@string/text_food_avoid"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_14sp" />
+
+
+
+</LinearLayout>

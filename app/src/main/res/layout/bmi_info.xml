@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup_bmi"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.fittrack.View.RegularFontTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_what_bmi"
+                android:textColor="@color/color_border_black"
+                android:textSize="@dimen/font_20sp" />
+
+            <ImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:padding="@dimen/margin_5dp"
+                android:src="@drawable/ic_close_popup_gray" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dp"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:background="@color/color_grey" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.fittrack.View.RegularFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:lineSpacingExtra="@dimen/margin_3dp"
+            android:text="@string/text_bmi_info"
+            android:textColor="@color/color_border_black"
+            android:textSize="@dimen/font_14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_8dp"
+        android:background="@color/color_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_underweight"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_5dp"
+                android:text=":"
+                android:textColor="@color/color_black" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_16"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_normal"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_5dp"
+                android:text=":"
+                android:textColor="@color/color_black" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_16_18"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_overweight"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_5dp"
+                android:text=":"
+                android:textColor="@color/color_black" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_18_25"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/text_obese"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/margin_5dp"
+                android:text=":"
+                android:textColor="@color/color_black" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="@dimen/margin_5dp"
+                android:text="@string/text_30"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_16sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_gradiant_popup"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.fittrack.View.RegularFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:drawableRight="@drawable/ic_continue_white_popup_btn"
+                android:gravity="center"
+                android:padding="@dimen/margin_10dp"
+                android:text="@string/text_continue"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

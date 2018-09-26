@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.fittrack.View.RegularFontTextView
+            android:id="@+id/tv_message_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_70dp"
+            android:background="@drawable/bg_chat_green"
+            android:gravity="right|center"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:text="massage"
+            android:textAllCaps="false"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_14sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/img_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_message_sender"
+            android:layout_marginRight="@dimen/margin_2dp"
+            android:src="@drawable/sender_green" />
+
+        <com.fittrack.View.RegularFontTextView
+            android:id="@+id/tv_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/img_send"
+            android:gravity="right|center"
+            android:maxLines="1"
+            android:text="sender"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_12sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.fittrack.View.RegularFontTextView
+            android:id="@+id/tv_message_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_70dp"
+            android:background="@drawable/bg_chat_grey"
+            android:gravity="left|center"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:text="massage"
+            android:textAllCaps="false"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_14sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/img_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_message_receiver"
+            android:layout_marginLeft="@dimen/margin_2dp"
+            android:src="@drawable/reciver_gray" />
+
+        <com.fittrack.View.RegularFontTextView
+            android:id="@+id/tv_receiver_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/img_receiver"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:gravity="left|center"
+            android:maxLines="1"
+            android:text="Receiver"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_12sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

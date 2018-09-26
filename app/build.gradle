@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.fittrack"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    /******Gradle********/
+    /*For Ads in App*/
+    compile 'com.google.android.gms:play-services-ads:11.0.2'
+    /*For spunk bugsense */
+    compile files('libs/mint-5.0.0.jar')
+    /*facebook*/
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    /*For gps*/
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    compile 'com.google.android.gms:play-services-auth:11.0.2'
+    /*Firebase*/
+    compile 'com.google.firebase:firebase-core:11.0.2'
+    compile 'com.google.firebase:firebase-messaging:11.0.2'
+    /*MP android Chart*/
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    /*App*/
+    compile 'com.android.support:multidex:1.0.1'
+    /*Create Model classes from http://www.jsonschema2pojo.org/*/
+    compile 'com.google.code.gson:gson:2.4'
+    /*Recycleview*/
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    /*Image Loader  from Api*/
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    /*Pagination*/
+    compile 'com.github.markomilos:paginate:0.5.1'
+    /*material design*/
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    /*RippleView*/
+    compile 'com.github.traex.rippleeffect:library:1.3'
+    /*Retrofit*/
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    /*Crop*/
+    compile 'com.naver.android.helloyako:imagecropview:1.0.3'
+    /*Animation*/
+    compile 'com.nineoldandroids:library:2.4.0'
+}
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'
+
+//    /*facebook*/
+//    compile files('libs/mint-5.0.0.jar')
+//    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+//    compile 'com.android.support:appcompat-v7:25.3.1'
+//    compile 'com.google.android.gms:play-services-maps:11.0.2'
+//    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+//    compile 'com.google.android.gms:play-services-auth:11.0.2'
+//    compile 'com.android.support:multidex:1.0.1'
+//    compile 'com.google.code.gson:gson:2.4'
+//    compile 'com.squareup.picasso:picasso:2.5.2'
+//    compile 'com.android.support:recyclerview-v7:25.3.1'
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    compile 'com.github.markomilos:paginate:0.5.1'
+//    compile 'com.android.support:design:25.3.1'
+//    compile 'com.android.support:cardview-v7:25.3.1'
+//    compile 'com.github.traex.rippleeffect:library:1.3'
+//    compile 'com.nineoldandroids:library:2.4.0'
+//    compile 'com.google.firebase:firebase-core:9.4.0'
+//    compile 'com.google.firebase:firebase-messaging:9.4.0'
+//    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+//    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+//    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+//    compile 'com.naver.android.helloyako:imagecropview:1.0.3'

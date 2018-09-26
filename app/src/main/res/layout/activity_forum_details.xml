@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_new_login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_layout" />
+
+            <include layout="@layout/progressbar" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/ll_header"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <com.fittrack.View.RegularFontTextView
+                        android:id="@+id/tv_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="dfds"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/font_16sp" />
+
+
+                    <com.fittrack.View.RegularFontTextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="fdsfds"
+                        android:textColor="@color/color_grey"
+                        android:textSize="@dimen/font_12sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.fittrack.View.RegularFontTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="dsf"
+                        android:textColor="@color/color_red"
+                        android:textSize="@dimen/font_12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.fittrack.View.RegularFontTextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="dsf"
+                        android:textColor="@color/color_grey"
+                        android:textSize="@dimen/font_12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <com.fittrack.View.RegularFontTextView
+                        android:id="@+id/tv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:drawableLeft="@drawable/ic_reply_forum_details"
+                        android:drawablePadding="@dimen/margin_5dp"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="@string/text_comment"
+                        android:textColor="@color/color_red"
+                        android:textSize="@dimen/font_14sp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:background="@color/color_grey" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.fittrack.View.RegularFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_add_weightsheet"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="@string/text_add_comment"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_12sp"
+                    android:visibility="gone" />
+
+
+                <include
+                    layout="@layout/ads_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_add_weight"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

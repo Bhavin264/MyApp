@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- font size -->
+    <dimen name="font_10sp">10sp</dimen>
+    <dimen name="font_12sp">12sp</dimen>
+    <dimen name="font_14sp">14sp</dimen>
+    <dimen name="font_16sp">16sp</dimen>
+    <dimen name="font_18sp">18sp</dimen>
+    <dimen name="font_20sp">20sp</dimen>
+    <dimen name="font_22sp">22sp</dimen>
+    <dimen name="font_24sp">24sp</dimen>
+
+
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_40dp">38dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+
+    <dimen name="img_height">540px</dimen>
+
+    <dimen name="home_img_width">453px</dimen>
+    <dimen name="home_img_height">400px</dimen>
+    <dimen name="round_corner_width_height">90dp</dimen>
+    <dimen name="round_corner_width_height_home">60dp</dimen>
+    <dimen name="min_height_ratingbar">39px</dimen>
+    <dimen name="max_height_ratingbar">42px</dimen>
+
+    <dimen name="min_height_ratingbar_small">27px</dimen>
+    <dimen name="max_height_ratingbar_small">29px</dimen>
+    <dimen name="small_user_img_height">60dp</dimen>
+
+    <dimen name="min_height_ratingbar_big">85px</dimen>
+    <dimen name="max_height_ratingbar_big">89px</dimen>
+
+    <dimen name="min_height_ratingbar_small_host">37px</dimen>
+    <dimen name="max_height_ratingbar_small_host">37px</dimen>
+    <dimen name="height_property_details_header">170dp</dimen>
+    <dimen name="General_File_Height_Width">90dp</dimen>
+    <dimen name="item_img_height_sub_cat">230dp</dimen>
+    <dimen name="img_circle_height">90dp</dimen>
+    <dimen name="img_circle_width">90dp</dimen>
+    <dimen name="height_map">200dp</dimen>
+</resources>

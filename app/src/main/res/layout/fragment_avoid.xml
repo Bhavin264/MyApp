@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_food_avoid">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/progressbar" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header"
+        android:orientation="vertical">
+
+        <com.fittrack.View.RegularFontTextView
+            android:id="@+id/tv_avoid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:background="@color/color_avoid_red"
+            android:drawableLeft="@drawable/ic_white_food_avoid"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="center|left"
+            android:padding="@dimen/margin_10dp"
+            android:text="@string/text_food_avoid"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_avoid"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_avoid_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_50dp"
+                android:gravity="center"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/font_16sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

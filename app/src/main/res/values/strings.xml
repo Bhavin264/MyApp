@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">FitTrack</string>
+    <string name="facebook_app_id">263907470752879</string>
+
+    <!--ads-->   <!--hareshbhai given id-->
+    <string name="banner_ad_unit_id">ca-app-pub-5324474188812657/1481039961</string>
+    <!--google-->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string> -->
+
+    <!--ca-app-pub-3940256099942544/6300978111-->
+    <!--Signup-->
+    <string name="text_username">User name</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_height">Height</string>
+    <string name="text_birthdate">Birthdate</string>
+    <string name="text_password">Password</string>
+    <string name="text_confirm_password">Confirm Password</string>
+    <string name="text_mobile_number">Mobile Number</string>
+    <string name="text_email">Email</string>
+    <string name="text_activity_level">Activity Level</string>
+    <string name="text_register">Register</string>
+    <string name="text_already_account">Already have an account?</string>
+    <string name="text_login">Login</string>
+    <string name="text_facebook_login">Facebook Login</string>
+    <string name="text_male">Male</string>
+    <string name="text_female">Female</string>
+    <string name="text_normal">Normal</string>
+    <string name="text_light">Light</string>
+    <string name="text_medium">Medium</string>
+    <string name="text_active">Active</string>
+    <string name="text_ok">Ok</string>
+    <string name="text_internet">Internet Connection is not available</string>
+    <string name="text_username_empty">Please enter username</string>
+    <string name="text_gender_empty">Please select gender</string>
+    <string name="text_height_empty">Please enter height</string>
+    <string name="text_weight_empty">Please enter weight</string>
+    <string name="text_birthdate_empty">Please select birthdate</string>
+    <string name="text_mobile_number_empty">Please enter mobile number</string>
+    <string name="text_email_empty">Please enter email</string>
+    <string name="text_valid_email_empty">Please enter valid email</string>
+    <string name="text_activity_level_empty">Please select activity level</string>
+    <string name="text_password_empty">Please enter password</string>
+    <string name="text_confirm_password_empty">Please enter confirm password</string>
+    <string name="text_password_not_match">Password do not match</string>
+    <string name="text_password_limit">password should be minimum of 6 letters</string>
+    <string name="text_save_profile_picture_msg">You must allow access photos, media and files(storage) permission to set your picture.\n\nIf you deny permissions then you are not able to select pictures.To allow permission then follow below steps.\n\nTap setting > apps > Salonx > permissions and turn on.</string>
+    <string name="text_skip">Skip</string>
+    <string name="text_continue">Continue</string>
+    <string name="File_not_Found">Image not Found</string>
+    <string name="File_choose">Choose</string>
+
+
+    <!--Login-->
+    <string name="text_forgot_password">Forgot Password?</string>
+    <string name="text_dont_account">Don\' have an account?</string>
+
+    <!--New-->
+    <string name="text_login_fb">Login With Facebook</string>
+
+
+    <!--Home-->
+    <string name="text_FitTrack_is">FitTrack is developed By Krira Fitness with aim to spread awareness about physical fitness.</string>
+    <string name="text_FitTrack_has">FitTrack has many features which help to track the fitness.</string>
+    <string name="text_by_knowing_bmi">By knowing BMI, you can know that how healthy you are.</string>
+    <string name="text_by_knowing_bmr">By knowing BMR, you can know your daily calorie intake based on your goal.</string>
+    <string name="text_you_add_weight">You can add your weight daily and see on the chart to see that how is your goal performing.</string>
+    <string name="text_you_add_question">You can post your question on the Forum and get answers. There will be tips for weight loss, weight gain in the forum.</string>
+    <string name="text_send_us">Send us your Feedback for any kind of your idea to improve the app.</string>
+
+    <!--BMI-->
+    <string name="text_bmi">BMI</string>
+    <string name="text_age">Age(year)</string>
+    <string name="text_reset">Reset</string>
+    <string name="text_calculate">Calculate</string>
+    <string name="text_underweight">Underweight</string>
+    <string name="text_overweight">Overweight</string>
+    <string name="text_obese">Obese</string>
+    <string name="text_kg">Kg</string>
+    <string name="text_height_cm">Height (cm)</string>
+    <string name="text_pound">Pound</string>
+    <string name="text_age_empty">Please enter your age</string>
+    <string name="text_check_info">Check Info</string>
+    <string name="text_congratulations">Congratulations !</string>
+    <string name="text_perfect_weight">Perfect Weight</string>
+    <string name="text_login_valid">You have to Login to Continue</string>
+    <!--Normal Weight = You have perfect weight.-->
+    <!--Underweight = You need to gain weight.-->
+    <!--Overweight = You need to lose weight.-->
+    <!--Obeses = You must lose weight to have healthy life-->
+    <string name="text_bmi_normal">You have perfect weight.</string>
+    <string name="text_bmi_underweight">You need to gain weight.</string>
+    <string name="text_bmi_overweight">You need to lose weight.</string>
+    <string name="text_bmi_obuse">You must lose weight to have healthy life</string>
+
+
+    <!--bmi popup-->
+    <string name="text_what_bmi">What is BMI?</string>
+    <string name="text_16">&lt; 18.5</string>
+    <string name="text_16_18">18.5 - 24.9</string>
+    <string name="text_18_25">25.0 - 29.9</string>
+
+
+    <string name="text_30">&gt; 30</string>
+    <string name="text_bmi_info">BMI (body mass index) is a calculated number representing a perBMI (body mass index) is a calculated number
+        representing a person\'s level of fat or obesity level. According to the Centers for Disease Control and Prevention (CDC), a BMI of 30 or
+        above indicates obesity. BMI levels are broken down by weight range and are as follows:</string>
+
+    <!--BMR-->
+    <string name="text_bmr">BMR</string>
+    <string name="text_result">Result</string>
+    <string name="text_calories">Calories</string>
+    <string name="text_specify_activities">Select Activity level:</string>
+    <string name="text_no_activity">No physical activity,office work</string>
+    <string name="text_light_activity">Light activity 1-2 day/week</string>
+    <string name="text_medium_activity">Medium activity 3-4 day/week</string>
+    <string name="text_daily_activity">Daily activity 6-7 day/week</string>
+    <string name="text_daily_intake">Daily Intake:</string>
+    <string name="text_weight_loss">Weight Loss</string>
+    <string name="text_maintain">Maintain</string>
+    <string name="text_weight_gain">Weight Gain</string>
+
+    <!--bmr popup-->
+    <string name="text_what_bmr">What is BMR?</string>
+    <string name="text_bmr_info">The Basal Metabolic Rate (BMR) is the amount of energy you need while resting in a temperate environment during the
+        post-absorptive state, or when your digestive system is inactive. In such a state, your energy will be used only to maintain your vital organs,
+        which include the heart, lungs, kidneys, the nervous system, intestines, liver, lungs, sex organs, muscles, and skin. The BMR decreases with age
+        and increases with muscle mass.</string>
+
+    <!--Drawer-->
+    <string name="text_home">Home</string>
+    <string name="text_edit_profile">Edit Profile</string>
+    <string name="text_current_bmi">Current BMI</string>
+    <string name="text_current_bmr">Current BMR</string>
+    <string name="text_weight_sheet">Weight Sheet</string>
+    <string name="text_photo_gallery">Photo Gallery</string>
+    <string name="text_chart">Chart</string>
+    <string name="text_make_compare">Compare</string>
+    <string name="text_forum">Forum</string>
+    <string name="text_feedback">Feedback</string>
+    <string name="text_share">Share App</string>
+    <string name="text_food">Food Directory</string>
+    <string name="text_Instructions">Food Instructions</string>
+    <string name="text_chat">Chat with Krira</string>
+    <string name="text_guest">Guest</string>
+
+
+    <!--Add Weight Sheet popup-->
+    <string name="text_add">Add</string>
+    <string name="text_add_weight">Add Weight</string>
+    <string name="text_add_weightsheet">Add WeightSheet</string>
+
+    <string name="text_done">Done</string>
+    <string name="text_date">Date</string>
+    <string name="text_date_empty">Please enter date</string>
+
+    <!--Photo gallery-->
+    <string name="text_add_photo">Add Photo</string>
+
+    <!--profile-->
+    <string name="text_Profile">Profile</string>
+    <string name="text_change_password">Change Password</string>
+    <string name="text_old_password_empty">Please enter old password</string>
+    <string name="text_new_password_empty">Please enter New password</string>
+    <string name="text_old_password">Old Password</string>
+
+    <!--Add Forum popup-->
+    <string name="text_add_forum">Add Forum</string>
+    <string name="text_add_title">Add Title</string>
+    <string name="text_description">Description</string>
+    <string name="text_add_topic">Add Topic</string>
+    <string name="text_topic_empty">Please enter topic</string>
+    <string name="text_title_empty">Please enter title</string>
+
+    <!--Forum Detail-->
+    <string name="text_comment">Comment</string>
+
+    <string name="text_comment_empty">Please enter comment</string>
+
+    <!--Comment Dialog-->
+    <string name="text_add_comment">Add Comment</string>
+
+    <!--Add Image-->
+    <string name="text_add_image">Add Photo</string>
+    <string name="text_image_empty">Please select image</string>
+
+    <!--Compare-->
+    <string name="text_compare">Compare</string>
+    <string name="text_compare_photo">Compare Photo</string>
+
+    <!--Facebook login-->
+    <string name="text_fb_email_require">We can\'t get email please check your facebook account your email address is public or private? you must allow email to logged in.</string>
+    <string name="txt_error">Error</string>
+    <string name="text_server_error">Something went wrong,please try again letter</string>
+
+    <!--chart-->
+    <string name="add_values">Add values to the chart</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="add">Add</string>
+    <string name="new_series">New series</string>
+    <string name="text_year">Year</string>
+    <string name="text_month">Select Month</string>
+    <string name="text_weight_chart">Weight Chart</string>
+    <string name="text_january">January</string>
+    <string name="text_february">February</string>
+    <string name="text_march">March</string>
+    <string name="text_april">April</string>
+    <string name="text_may">May</string>
+    <string name="text_june">June</string>
+    <string name="text_july">July</string>
+    <string name="text_august">August</string>
+    <string name="text_sepember">September</string>
+    <string name="text_october">October</string>
+    <string name="text_november">November</string>
+    <string name="text_december">December</string>
+
+    <!--Logout-->
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_are_you_sure_to_logout">Are you sure to Logout?</string>
+
+    <!--Feedback-->
+    <string name="text_subject">Subject</string>
+    <string name="text_enter_feedback">Enter Feedback</string>
+    <string name="text_send">Submit</string>
+    <string name="text_subject_empty">Please enter subject</string>
+    <string name="text_descrption_empty">Please enter Description</string>
+
+    <!--Image-->
+    <string name="text_image">Image</string>
+    <string name="text_image_share_empty">You don\'t have any Image</string>
+
+    <!--Food categories-->
+    <string name="text_food_categories">Food Categories</string>
+
+    <!--Diet food categories-->
+    <string name="text_calories_diet">Calories :</string>
+    <string name="text_fat">Fat :</string>
+    <string name="text_carbs">Carbs :</string>
+    <string name="text_protein">Protein :</string>
+    <string name="text_serving_size">Serving Size :</string>
+    <string name="text_diet_food">Diet Food Directory</string>
+
+    <!--Food details-->
+    <string name="text_Details">Details</string>
+    <string name="text_total_fat">Total Fat :</string>
+    <string name="text_sat_fat">Saturated Fat :</string>
+    <string name="text_poly_fat">Polyunsaturated Fat :</string>
+    <string name="text_mono_fat">Monounsaturated Fat :</string>
+    <string name="text_total_carbs">Total Carbs :</string>
+    <string name="text_dietary_fiber">Dietary Fiber :</string>
+    <string name="text_sugar">Sugar</string>
+    <string name="text_cholesterol">Cholesterol</string>
+    <string name="text_sodium">Sodium</string>
+    <string name="text_potassium">Potassium</string>
+
+    <!--instruction-->
+    <string name="text_food_avoid">Food To Avoid</string>
+    <string name="text_food_eat">Food To Eat</string>
+    <string name="text_to_Avoid">TO AVOID</string>
+    <string name="text_to_Eat">TO EAT</string>
+
+
+    <!--chat-->
+    <string name="send">Send</string>
+    <string name="text_enter_here">Enter here</string>
+    <string name="text_message_empty">Please enter massage</string>
+
+
+</resources>

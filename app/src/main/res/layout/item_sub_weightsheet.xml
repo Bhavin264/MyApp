@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.fittrack.View.RegularFontTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/margin_5dp"
+                android:text="dsfdsfds"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_14sp" />
+
+            <com.fittrack.View.RegularFontTextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/margin_3dp"
+                android:text="fdsfds"
+                android:textColor="@color/color_border_black"
+                android:textSize="@dimen/font_12sp" />
+
+        </LinearLayout>
+
+
+        <com.fittrack.View.RegularFontTextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/margin_8dp"
+            android:text="dsfds"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/font_14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:background="@color/color_grey"
+        android:layout_marginBottom="@dimen/margin_5dp"/>
+
+
+</LinearLayout>

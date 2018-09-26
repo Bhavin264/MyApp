@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_new_login">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_layout" />
+
+        <include layout="@layout/progressbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_header"
+        android:layout_margin="@dimen/margin_10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--<com.fittrack.View.RegularFontTextView-->
+                <!--android:id="@+id/et_weight"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/bg_round_fill_green"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:inputType="text"-->
+                <!--android:maxLines="1"-->
+                <!--android:paddingBottom="@dimen/margin_5dp"-->
+                <!--android:paddingTop="@dimen/margin_5dp"-->
+                <!--android:text="@string/text_weight_chart"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:textSize="@dimen/font_12sp"-->
+                <!--android:layout_margin="@dimen/margin_5dp"-->
+                <!--android:visibility="visible" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:layout_weight="0.5">
+
+                <com.fittrack.View.RegularFontTextView
+                    android:id="@+id/tv_sp_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:background="@drawable/bg_round_corner_red"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/margin_12dp"
+                    android:text="@string/text_month"
+                    android:textColor="@color/color_red"
+                    android:textColorHint="@color/color_red"
+                    android:textSize="@dimen/font_14sp"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/sp_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:src="@drawable/ic_dropdown_arrow_pink_weightsheet" />
+            </RelativeLayout>
+
+            <com.fittrack.View.RegularFontTextView
+                android:id="@+id/tv_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/btn_reset_bmi"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/margin_12dp"
+                android:text="@string/text_year"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_grey"
+                android:textSize="@dimen/font_14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.fittrack.View.RegularFontTextView
+                android:id="@+id/tv_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/bg_round_corner_blue"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/margin_12dp"
+                android:text="@string/text_year"
+                android:textColor="@color/color_bg_header"
+                android:textColorHint="@color/color_grey"
+                android:textSize="@dimen/font_12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+        <include
+            layout="@layout/ads_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>

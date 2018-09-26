@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/color_bg_header"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/img_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:padding="@dimen/margin_10dp"
+            android:src="@drawable/ic_menubar"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:padding="@dimen/margin_10dp"
+            android:src="@drawable/ic_arrow_back_header_white"
+            android:visibility="gone" />
+
+        <com.fittrack.View.RegularFontTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin_5dp"
+            android:text="@string/text_register"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_16sp"
+            android:visibility="gone"
+            android:textAllCaps="false"/>
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:padding="@dimen/margin_10dp"
+            android:src="@drawable/ic_add_round_white_header"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:padding="@dimen/margin_10dp"
+            android:src="@drawable/ic_share_white_header"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

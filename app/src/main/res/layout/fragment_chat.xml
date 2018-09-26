@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_layout" />
+
+        <include layout="@layout/progressbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_header"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/swiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_chat_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="none" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+                <com.fittrack.View.RegularFontTextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin_50dp"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <com.fittrack.View.RegularFontEditText
+                        android:id="@+id/et_msg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/bg_round_corner_red"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:hint="@string/text_enter_here"
+                        android:maxLines="3"
+                        android:padding="@dimen/margin_10dp"
+                        android:textColor="@color/color_black"
+                        android:textColorHint="@color/color_grey"
+                        android:textSize="@dimen/font_12sp"
+                        android:visibility="visible" />
+
+                    <com.fittrack.View.RegularFontTextView
+                        android:id="@+id/tv_send"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/bg_round_red"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="@string/send"
+                        android:textColor="@color/color_white" />
+
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/ads_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_send"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
